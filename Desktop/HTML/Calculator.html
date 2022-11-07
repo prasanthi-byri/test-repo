@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title> calculator</title>
+    </head>
+    <style>
+        .a{
+            display:inline-flex;
+        }
+        .b{
+            padding:4px;
+            margin:4px;
+            border:1px solid black;
+            background:green;
+            width:50px;
+            height:40px;
+            font-family: bold;
+            text-align:center;
+            color:white;
+            font-size:30px;
+        }
+        .c{
+            margin-left:4px;
+            margin-right:4px;
+            margin-top:1px;
+        }
+        button:hover{
+            background-color: aqua;
+        }
+       
+        
+        
+    </style>
+<body>
+    <form name="Calculator" class="calculator">
+    <div align="center" style="border:2px solid black;background:lightseagreen;width:250px;margin:100px;margin-left:600px;padding-top:5px;height:250px;">
+    <div class="a"> 
+        <div class="c"> <input type="text" name="input" size="20" rows="10" id="display"></div>
+        
+        <input type="button" class="b" value="C"> </button>
+    </div>
+    <br>
+    <div class="a"> 
+        <input type="button" class="b" value ="1" OnClick="Calculator.input.value+='1'" >
+        <input type="button" class="b" value ="2" OnClick="Calculator.input.value+='2'" >
+        <input type="button" class="b"  value ="3" OnClick="Calculator.input.value+='3'">
+        <input type="button" class="b"  value ="/" OnClick="Calculator.input.value+='/'"  >
+    </div>
+    <br>
+    
+    <div class="a"> 
+        <input type="button" class="b" value ="4" OnClick="Calculator.input.value+='4'" >
+        <input type="button" class="b" value ="5" OnClick="Calculator.input.value+='5'" >
+        <input type="button" class="b" value ="6" OnClick="Calculator.input.value+='6'" >
+        <input type="button" class="b" value ="*" OnClick="Calculator.input.value+='*'" >
+    </div><br>
+    <div class="a"> 
+        <input type="button" class="b" value ="7" OnClick="Calculator.input.value+='7'" >
+        <input type="button" class="b" value ="8" OnClick="Calculator.input.value+='8'" >
+        <input type="button" class="b" value ="9" OnClick="Calculator.input.value+='9'" >
+        <input type="button" class="b" value ="-" OnClick="Calculator.input.value+='-'"  >
+    </div>
+    <br>
+    <div class="a"> 
+        <input type="button" class="b"  value ="0" OnClick="Calculator.input.value+='0'" >
+        <input type="button" class="b"  value ="." OnClick="Calculator.input.value+='.'"  >
+        <input type="button" class="b"value ="="  OnClick="Calculator.input.value=eval(Calculator.input.value)" >
+        
+        <input type="button" class="b" value ="+"  OnClick="Calculator.input.value+='+'" >
+    </div>
+    </div>
+</form>
+   
+
+    </body>
+    </html>
